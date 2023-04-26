@@ -1,16 +1,28 @@
-#se crea una variable con el valor de 1
 i=1
-#se crea una variable con el valor de 0
 sum=0
-#se crea un ciclo while con el valor de i que sea menor o mayor a 5
-while i<=5:
-#se crea un print para que muestre (i) en la pantalla o terminal
+#Declaramos las variables
+while i<=10:
+    #Indicamos que el ciclo se repita mientras que la variable no sea menor o igual a 10
     print(i)
-#se le agrega un valor a la variable sum de (sum) mas (i) 
-    sum=sum+i
-#se le asigna a i un mas o igual a 1 que es referente a la formula de (#i=i+1)
-    i+=1 #i=i+1 
-#se imprime en pantalla "la suma es: " y lo que vale o arroje (sum)
-print(f'la suma es= {sum}')
+    sum+=i #sum=sum+i
+    i+=1 #i=i+1
+    #Realizamos un contador que aumenta de 1 en 1 
+print('la suma es:',sum)
+#Mostramos por pantalla lo almacenado en la variable sum
 
-#el resultado da la suma de los numeros que se muestran en pantalla
+i=0
+sp,si=0,0
+#Definimos variables
+while i<=4:
+     #Indicamos que el ciclo se repita mientras que la variable no sea menor o igual a 10
+    print(i)
+    if i%2==0:
+        sp+=i
+        #Indicamos que si los numeros de la variable i modulo son igual a 0 los sum en la variable sp
+    else:
+        si+=i
+        #Si la anterior condicion no se cumple sume los numeros a la variable si
+    i+=1
+print('la suma de los pares es:',sp)
+print('la suma de los impares es:',si)
+#Mostramos los resultados almacenados en ambas variables 
