@@ -1,0 +1,1 @@
+print('la suma de',5,'y',10,'es',5+10)
