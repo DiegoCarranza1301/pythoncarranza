@@ -21,3 +21,14 @@ for d in lista:
          menor=d
 print(f'El numero mayor es {mayor}')
 print(f'el numero menor es {menor}')
+
+maxRep=0
+for e in lista:
+    cont=0
+    for f in lista:
+        if e==f:
+            cont+=1
+    if cont>maxRep:
+        maxRep=cont
+        moda=e
+print(f'La moda es {moda}')
