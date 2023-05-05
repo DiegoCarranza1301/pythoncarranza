@@ -2,7 +2,7 @@ import random
 suma=0
 cont=0
 mayor=0
-menor=0
+menor=1000
 lista=[]
 tam=random.randint(10,20)
 
@@ -20,3 +20,4 @@ for d in lista:
      if d<menor:
          menor=d
 print(f'El numero mayor es {mayor}')
+print(f'el numero menor es {menor}')
