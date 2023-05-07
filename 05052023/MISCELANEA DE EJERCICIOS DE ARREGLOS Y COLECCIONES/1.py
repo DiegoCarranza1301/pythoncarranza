@@ -8,7 +8,7 @@
 # g. Ordenar descendente (No perder el arreglo original; el l punto a).
 # h. Moda.
 # i. Mediana
-# j. Buscar. Decir si encuentra el número, en qué posición(es) está, cuantas veces está
+# j. Buscar. Decir si encuentra el número, en qué posición(es) está, cuantas veces está.
 import random
 lista=[]
 inicio=int(input('ingrese un rango inicial: '))
@@ -54,18 +54,18 @@ for e in range(tam-1):
         if lista[e]>lista[f]:
             lista[e],lista[f]=lista[f],lista[e]
 print(f'El orden ascedente de la lista es: \n{lista}')
-for e in range(tam-1):
-    for f in range(e+1,tam):
-        if lista[e]<lista[f]:
-            lista[e],lista[f]=lista[f],lista[e]
-print(f'El orden descendente de la lista es: \n{lista}')
-maxRep=0
+i=0
 for g in lista:
     cont=0
     for h in lista:
         if g==h:
             cont+=1
-    if cont>maxRep:
-        maxRep=cont
+    if cont>i:
+        i=cont
         moda=g
 print(f'La moda es {moda}')
+for e in range(tam-1):
+    for f in range(e+1,tam):
+        if lista[e]<lista[f]:
+            lista[e],lista[f]=lista[f],lista[e]
+print(f'El orden descendente de la lista es: \n{lista}')
