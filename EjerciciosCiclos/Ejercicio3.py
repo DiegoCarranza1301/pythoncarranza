@@ -8,5 +8,10 @@ while b<=a:
     b+=1
 if sum==a:
     print('El numero es perfecto')
-else: print('El numero no es perfecto')
-        
+    contador=0
+    print(f'Los divisores de {a} son: ')
+    for b in range(1,a+1):
+        if a%b==0:
+            print(f'{b}')
+            contador+=1
+else: print('El numero no es perfecto') 

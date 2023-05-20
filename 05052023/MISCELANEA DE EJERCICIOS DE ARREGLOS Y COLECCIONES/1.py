@@ -30,14 +30,14 @@ num=int(input('ingrese un numero: '))
 while num not in lista:
     num=int(input('El numero no se encuentra en la lista, ingrese otro: '))
 for b in lista:
-    contador=0
+    contador=1
     for c in lista:
         if num==c:
             contador+=1
 print(f'El numero se encuentra {contador} veces')
 
 for d in range(len(lista)):
-    if num==lista[d]:
+    if num==lista[d+1]:
         print(f'{lista[d]} esta en la posición {d}')
 print(f'La suma de los numeros de la lista es {suma}')
 promedio=suma/tam
